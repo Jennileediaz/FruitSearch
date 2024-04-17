@@ -1,0 +1,71 @@
+
+
+
+* 
+{
+  background:  #c3b4e0
+}
+
+
+.search-container 
+{
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-container input
+ {
+  width: 250px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+/*Apply the gradient color towards the entire page & Center all content*/
+body 
+{
+  background: linear-gradient(to bottom, #ff7e7e, #65499f); 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestions 
+{
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to bottom,  #ff7e7e, #65499f); /* Gradient colors that I am using for the whole page */
+  border: 1px solid #f4c4da;
+  border-top: none;
+  border-radius: 0 0 5px 5px; 
+  box-shadow: 0 2px 4px #f4cfda; 
+  max-height: 200px;
+  overflow-y: auto; /* This is important incase the content overflows- scrollbar will be enabled! */
+  z-index: 1; 
+}
+
+
+.suggestions ul 
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions li 
+{
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+
+.suggestions li:hover 
+{
+  background-color: #65499f;
+}
